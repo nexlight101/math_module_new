@@ -4,7 +4,7 @@ import "errors"
 
 // Factorial returns the slice of intergers
 func Factorial(n int) ([]int, error) {
-	if n == 0 {
+	if n < 1 {
 		return nil, errors.New("Cannot factorize 0")
 	}
 	f := 1
